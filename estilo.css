@@ -1,5 +1,6 @@
 body{
     font-family:sans-serif;
+    background: linear-gradient(to right,#65bbfd,#308AD1);
 }
 
 nav{
@@ -34,6 +35,3 @@ a:hover{
     text-align: left;
     margin-left: 3%;
 }
-
-
-
