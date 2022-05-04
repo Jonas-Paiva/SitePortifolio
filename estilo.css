@@ -1,0 +1,49 @@
+
+/* Menu fixado */
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family:sans-serif;
+    color: black;
+    transition: 3ms;
+}
+
+
+li{
+    margin: 8px 16px;
+    list-style: none;   
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+ul{
+    margin: 0%;
+    display: flex;
+    background-color: rgba(73, 167, 255, 0.719);
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+/* Inicio boas-vindas */
+
+body{
+    font-family: sans-serif;
+}
+
+#boasVindas{
+    margin-top: 100px;
+}
+
+/* Os artigos e Categorias */
+article{
+    width: 100%;
+    height: 800px;
+}
