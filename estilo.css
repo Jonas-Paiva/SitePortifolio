@@ -25,12 +25,12 @@ body{
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 3.5vh;
     font-family:sans-serif;
 }
 
 li{
-    margin: 8px 16px;
+    margin: 1vh 2vh;
     list-style: none;  
 }
 
@@ -52,11 +52,10 @@ ul{
     background-color: rgba(0, 36, 104, 0.719);
     position: fixed;
     width: 100%;
-    min-height: 40px;
+    min-height: 6.6vh;
     top: 0;
     left: 0;
     text-align: center;
-    z-index: 100;
 }
 
 
@@ -71,7 +70,7 @@ article{
     padding: 10px;
     border: 1px;
     margin: 0%;
-    min-height: 600px;
+    min-height: 150vh;
 }
 
 h1{
@@ -110,18 +109,26 @@ footer{
     margin: 0;
     float: left;
     border: 1vh solid rgba(0, 47, 255, 0.479);
-    border-radius: 50%;
-    max-width: 40%;
+    border-radius: 2vh;
+    width: 70vh;
     animation: border-rotate 4s infinite alternate-reverse ease-in-out;
 }
 
 #boasVindas h1{
-    margin-top: 10vh;
-    float:right;
-    font-size: 13vh;
+    margin: 12vh 0vh 0vh 3vh;
+    float:left;
+    text-align: left;
+    font-size: 12vh;
 }
 
+#habilidades embrulho{
+    display:flex;
+    align-items: center;
+}
 
+span img{
+    width: 20vh;
+}
 
 
 /* Animações */
