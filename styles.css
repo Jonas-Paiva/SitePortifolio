@@ -7,7 +7,7 @@ html{
 body{
     font-family: Arial, Helvetica, sans-serif;
     animation: move-fundo 20s linear infinite alternate;
-    background-image: url(./assets/fundo.jpeg);
+    background-image: url(./assets/fundo.jpg);
     transition-property: url;
     transition: 1s;
     background-size: 180vh;
