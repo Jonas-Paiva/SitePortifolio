@@ -10,7 +10,6 @@ body{
     background-image: url(/assets/fundo.jpeg);
     transition-property: url;
     transition: 1s;
-    transform-style: flat;
     background-size: 180vh;
 }
 
