@@ -1,5 +1,6 @@
 
 /* comportamento do corpo */
+
 body{
     font-family: sans-serif;
     background-color: #484c4f;
@@ -9,7 +10,18 @@ body{
     margin: auto;
     border: 1px;
     max-width: 1200px;
-    z-index: 10;
+}
+
+
+.poligono1{
+    left: -5px;
+    margin: 0%;
+    position:absolute;
+    border-radius: 10px;
+    background-color: rgb(20, 149, 255);
+    border: 1px solid rgb(20, 149, 255);
+    width: 100%;
+    transform: rotate(5deg);
 }
 
 /* Menu fixado */
@@ -50,6 +62,7 @@ ul{
     top: 0;
     left: 0;
     text-align: center;
+    z-index: 100;
 }
 
 
@@ -68,6 +81,10 @@ article{
 }
 
 h1{
+    float: inline-end;
+    border: 1px solid;
+    padding: 0%;
+    margin: 0%;
     font-size: 5em;
     color: aliceblue;
 }
@@ -89,3 +106,26 @@ footer{
 }
 
 /* individuais */
+
+
+
+
+
+
+/* Animação */
+h1{
+    animation-delay: 0.2s;
+    animation-duration: 0.3s;
+    animation: leftTo ease-in-out alternate-reverse;
+}
+
+@keyframes leftTo {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(1px);
+    }  
+}
