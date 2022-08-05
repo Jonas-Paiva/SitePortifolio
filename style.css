@@ -36,6 +36,21 @@ article{
     min-height: 410px;
 }
 
+.line {
+    box-shadow: 1px 2px 3px black;
+    left: -30px;
+    width: 100%;
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.lineL {
+ transform: rotate(2deg);
+}
+.lineR {
+    transform: rotate(-2deg);
+}
+
 .container {
     width: 900px;
 }
@@ -170,6 +185,7 @@ a:hover, li:hover{
     cursor: pointer;
     animation: up 200ms forwards ease-in;
 }
+
 @keyframes up {
     100%{
         transform: translateY(-10px);
@@ -183,11 +199,6 @@ a:hover, li:hover{
 }
 
 /* Habilidades */
-#habilidades {
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 #icons {
     flex-direction: row;
     flex-wrap: wrap;
@@ -204,12 +215,28 @@ span img {
 }
 
 /* contatos */
+#E-mail img:hover, #instagram img:hover, #linkdin img:hover, #whatsapp img:hover{
+    cursor: pointer;
+    animation: links 300ms forwards ease-in-out;
+}
+
+@keyframes links {
+    30%{
+        transform: rotate(-30deg);
+    }
+    70% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
 
 /* rodapé */
 #rodape {
     width: 100%;
     background-color: rgb(0, 23, 53);
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0px -2px 3px black;
     height: 40px;
 }
 
