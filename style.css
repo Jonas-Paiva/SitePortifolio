@@ -10,26 +10,30 @@
 }
 
 html {
-    background-color: #ffffff;
-    scroll-behavior: smooth;
+    background-color: #e4e4e4;
+    scroll-behavior: smooth ;
     font-family: 'Open Sans', sans-serif;
 }
 
-li, a, h1 , h2 , p {   
-    color: #000000;
+li, a, h1 , h2, footer {   
+    color: rgb(0, 152, 182);
 
 }
 
-body, article, section, footer {
+h1 {
+    font-size: 1.7em;
+}
+
+body, article, section, footer, ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
 article{
-    min-height: 500px;
+    padding-top: 55px;
+    min-height: 410px;
 }
 
 .container {
@@ -46,7 +50,7 @@ nav {
     top: 0px;
     width: 100%;
     height: 50px;
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(0, 23, 53);
     box-shadow: 2px 2px 5px black;
 }
 
@@ -63,6 +67,10 @@ nav ul li a {
     font-size: 1.3em;
 }
 
+li:hover{
+    transform: translateY(-5px);
+    transition: 200ms linear;
+}
 
 /* Home */
 
@@ -72,10 +80,28 @@ nav ul li a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    animation: Opacity-home 2s forwards linear;
 }
 
+@keyframes Opacity-home {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 #home h2 {
-    font-size: 3em;
+    font-size: 3.7em;
+    width: 400px;
+    text-align: left;
+    animation: move 2s alternate infinite ease-in-out;
+}
+
+@keyframes move {
+    100%{
+        transform: translateX(10px);
+    }    
 }
 
 .face {
@@ -83,14 +109,69 @@ nav ul li a {
     width: 350px;
 }
 
-/* sobre mim */
+.back-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
 
-/* projetos */
+.back-face::before{
+    content: "";
+    background: linear-gradient(90deg, rgb(0, 36, 83) 20%, rgba(0,212,255,1) 100%);
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    z-index: -1;
+    animation: border-rotate 6s infinite linear;
+}
+
+@keyframes border-rotate{
+    100%{
+        transform: rotate(1800deg);
+    }
+}
+
+
+/* sobre mim */
+#sobre {
+    flex-direction: row;
+    border: 1px solid;
+    justify-content: space-around;
+}
+
+#text{
+ flex-basis: 50%;
+}
+
+#cursos{
+    flex-basis: 30%;
+}
+
+#cursos ul {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(0, 23, 53);
+    box-shadow: 1px 1px 5px;
+    width: 300px;
+    height: 340px;
+}
+
+/* Habilidades */
+#habilidades {
+    
+    border: 1px solid;
+}
+
 
 /* contatos */
 
 /* rodapé */
 #rodape {
+    color: ;
+    width: 100%;
+    background-color: rgb(0, 23, 53);
+    box-shadow: 2px 2px 5px black;
     height: 40px;
 }
 
