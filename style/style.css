@@ -45,6 +45,20 @@ article {
 	min-height: 410px;
 }
 
+button {
+	min-height: 30px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: 0.8em
+}
+
+button:hover{
+	transform: translateX(10px);
+	transition: ease-in-out;
+}
+
+
 
 /*------------------------ linhas */
 .line {
