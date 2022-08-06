@@ -4,10 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Jonas Paiva</title>
-		<script src="script.js"></script>
 
-		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<title>Jonas Paiva</title>
+
+		<link rel="stylesheet" href="./style/style.css"/>
+		<link rel="stylesheet" href="/style/nav.css">
+		<link rel="stylesheet" href="/style/home.css">
+		<link rel="stylesheet" href="/style/sobre.css">
+		<link rel="stylesheet" href="/style/tec.css">
+		<link rel="stylesheet" href="/style/slide.css">
+		<link rel="stylesheet" href="/style/contatos.css">
+
 	</head>
 	<body>
 		<!-- menu -->
@@ -31,35 +38,38 @@
 				<h2>Olá, Sou Jonas<br />Estudante de Desenvolvimento</h2>
 			</article>
 
-			<span class="line lineL"></span>
+			<span class="line lineR"></span>
 
 			<!--Sobre-->
 			<article id="sobre">
+
 				<section id="text">
 					<h1>Sobre mim</h1>
 					<p>
-						Eu sou Jonas Paiva e tenho 24 anos, sou um apaixonado por tecnologia
-						desda infância, sempre muito ligado com jogos e com o computador,
-						fiz alguns cursos na area de tecnologia, mas me encontrei de verdade
-						no mundo da programação no final de 2019 onde decidi ingressar na
-						faculdade de Análise e Desenvolvimento de Software.
-						deste novo desafio, me desenvolver profissionalmente e  contribuir ativamente para o desenvolvimento da empresa.[experiência],[formação],[cursos].
-						Estou buscando uma nova oportunidade no mercado que seja desafiadora e onde eu possa aplicar novos conhecimentos adquiridos.Gosto bastante da área Web,[experiencia],[objetivos], [desafios];
-						Me considero uma pessoa dedicada, adaptativa e que não tem medo de tirar dúvidas quando necessário.
+						Eu sou Jonas Paiva, sou um apaixonado por tecnologia
+						desda infância,fiz alguns cursos na area de tecnologia, mas me encontrei de verdade
+						no mundo da programação, gosto de desafios e quero me desenvolver profissionalmente. Estou buscando uma nova oportunidade no mercado que seja desafiadora e onde eu possa aplicar novos conhecimentos adquiridos e continuar aprender sempre. Sou uma pessoa dedicada, adaptativa e que não tem medo de tirar dúvidas quando necessário.
 					</p>
 				</section>
 
-			
-			</article>
+				<section id="cursos">		
 
-			<span class="line lineR"></span>
+						<section class="BoxListSkills">
 
-			<article id="cursos">
-				<section id="cursos">
-					<div class="hardskills">
-						<h2>Análise de Desenvolvimento de Sistemas</h2>
-					</div>
+							<button onclick="test()" class="listbutton">Análise de Desenvolvimento de Sistemas<div class="arrow"></div></button>
+		
+						</section>
+
+						<section class="resumo" >
+							<p class="ativo">
+								Comecei no final de 2019, com o incentivo do meu amigo que mostrou uma oportunidade para alcançar meu sonhos através da programação
+							</p>
+							<p class="desativo">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, neque cupiditate, earum esse quae distinctio dignissimos similique officiis facere nam, nihil voluptatibus cum odit maxime ipsam. Laudantium officia quisquam voluptatum.
+							</p>
+						</section>
 				</section>
+
 			</article>
 			
 			<span class="line lineL"></span>
@@ -93,6 +103,7 @@
 						<h2>Bash</h2>
 					</span>
 				</section>
+
 			</article>
 
 			<span class="line lineR"></span>
@@ -128,7 +139,7 @@
 					<span class="dot" onclick="currentSlide(2)"></span>
 				</div>
 			</article>
-			
+
 			<span class="line lineL"></span>
 
 			<!--Contatos-->
@@ -136,7 +147,7 @@
 				<h1>Entre em Contato</h1>
 				<section id="icons">
 					<span id="github">
-						<img src="./assets/github.png" alt="" />
+						<a target="_blank" href="https://github.com/Jonas-Paiva"><img src="./assets/github.png" alt=""/></a>				
 						<h2>GitHub</h2>
 					</span>
 					<span id="E-mail">
@@ -144,11 +155,11 @@
 						<h2>E-mail</h2>
 					</span>
 					<span id="instagram">
-						<img src="./assets/instagram.png" alt="" />
+						<a target="_blank" href="https://www.instagram.com/jonaspaiva_sg/"><img src="./assets/instagram.png" alt="" /></a>
 						<h2>Instagram</h2>
 					</span>
 					<span id="linkdin">
-						<img src="./assets/linkedin.png" alt="" />
+						<a target="_blank" href="https://www.linkedin.com/in/jonas-paiva-6537861a3/"><img src="./assets/linkedin.png" alt="" /></a>	
 						<h2>Linkdin</h2>
 					</span>
 					<span id="whatsapp">
@@ -157,11 +168,14 @@
 					</span>
 				</section>
 			</article>
-		</main>
 
+		</main>
 		<!--rodapé-->
 		<footer id="rodape">
 			<p>©2022 | Projetado e codificado por Jonas Paiva.</p>
 		</footer>
+
+		<script src="/script/slide.js"></script>
+		<script src="./script/sobre.js"></script>
 	</body>
 </html>

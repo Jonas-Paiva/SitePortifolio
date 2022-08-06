@@ -1,0 +1,29 @@
+/* contatos */
+#github img:hover,
+#E-mail img:hover,
+#instagram img:hover,
+#linkdin img:hover,
+#whatsapp img:hover {
+	cursor: pointer;
+	animation: links 333ms forwards ease-out;
+}
+
+#qrcode {
+	widows: center;
+	z-index: 2;
+	margin: auto;
+	position: absolute;
+	width: 300px;
+}
+
+@keyframes links {
+	30% {
+		transform: rotate(-30deg);
+	}
+	70% {
+		transform: rotate(30deg);
+	}
+	100% {
+		transform: scale(1.4);
+	}
+}
