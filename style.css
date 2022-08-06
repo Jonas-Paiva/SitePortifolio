@@ -52,6 +52,7 @@ article{
 }
 
 .container {
+    border: 1px solid;
     width: 900px;
 }
 
@@ -157,31 +158,16 @@ a:hover, li:hover{
 /* sobre mim */
 #sobre {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #text{
- flex-basis: 50%;
+ flex-basis: 80%;
 }
 
-#cursos{
-    flex-basis: 30%;
-}
+/* cursos */
 
-#cursos ul {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: rgb(0, 23, 53);
-    box-shadow: 1px 1px 5px;
-    width: 300px;
-    height: 340px;
-    text-align: left;
-    padding-left: 25px;
-    align-items: flex-start;
-    justify-content: space-evenly;
-}
-#cursos ul:hover{
+.hardskills:hover{
     cursor: pointer;
     animation: up 200ms forwards ease-in;
 }
@@ -191,11 +177,6 @@ a:hover, li:hover{
         transform: translateY(-10px);
     }
     
-}
-
-#cursos ul li {
-    list-style: inside;
-    height: 25px;
 }
 
 /* Habilidades */
@@ -307,9 +288,9 @@ span img {
 }
 
 /* contatos */
-#E-mail img:hover, #instagram img:hover, #linkdin img:hover, #whatsapp img:hover{
+#github img:hover, #E-mail img:hover, #instagram img:hover, #linkdin img:hover, #whatsapp img:hover{
     cursor: pointer;
-    animation: links 300ms forwards ease-in-out;
+    animation: links 333ms forwards ease-out;
 }
 
 @keyframes links {
