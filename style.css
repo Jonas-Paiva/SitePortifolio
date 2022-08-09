@@ -364,15 +364,15 @@ span img {
 }
 
 .estacio {
-	background-image: url(/assets/estacio.png);
+	background-image: url(./assets/estacio.png);
 }
 
 .red {
-	background-image: url(/assets/redzero.png);
+	background-image: url(./assets/redzero.png);
 }
 
 .Microlins {
-	background-image: url(/assets/microlins-1.png);
+	background-image: url(./assets/microlins-1.png);
 }
 
 .ativo {
