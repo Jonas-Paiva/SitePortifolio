@@ -1,6 +1,5 @@
-
 // Button
-function test(buttonN) {
+function cursoText(buttonN) {
 	const p = document.getElementById(`${buttonN}`);
 	const ativo = document.getElementsByClassName("ativo")[0];
     ativo.className = "desativo";
@@ -8,9 +7,9 @@ function test(buttonN) {
 }
 
 // QRcode
-function zap (value){
-    const qrcode = document.getElementById('qrcode');
-    qrcode.style.display = `${value}`;
+function showQrcode(value,display){
+    const qrcode = document.getElementById(`${value}`);
+    qrcode.style.display = `${display}`;
 }
 
 // Slide

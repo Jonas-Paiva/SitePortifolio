@@ -8,12 +8,6 @@
 		<title>Jonas Paiva</title>
 
 		<link rel="stylesheet" href="./style/style.css"/>
-		<link rel="stylesheet" href="/style/nav.css">
-		<link rel="stylesheet" href="/style/home.css">
-		<link rel="stylesheet" href="/style/sobre.css">
-		<link rel="stylesheet" href="/style/tec.css">
-		<link rel="stylesheet" href="/style/slide.css">
-		<link rel="stylesheet" href="/style/contatos.css">
 
 	</head>
 	<body>
@@ -56,11 +50,11 @@
 
 						<section class="BoxListSkills">
 
-							<button onclick="test(1)" class="listbutton">Análise de Desenvolvimento de Sistemas<div class="arrow"></div></button>
+							<button class="buttonCursos" onclick="cursoText(1)" class="listbutton">Análise de Desenvolvimento de Sistemas<div class="arrow"></div></button>
 
-							<button onclick="test(2)" class="listbutton">Design Gráfico <div class="arrow"></div></button>
+							<button class="buttonCursos" onclick="cursoText(2)" class="listbutton">Design Gráfico <div class="arrow"></div></button>
 
-							<button onclick="test(3)" class="listbutton">Montagem e Manutenção<div class="arrow"></div></button>
+							<button class="buttonCursos" onclick="cursoText(3)" class="listbutton">Microlins<div class="arrow"></div></button>
 
 						</section>
 
@@ -68,17 +62,24 @@
 
 							<p id='1' class="ativo">
 								<span class="image estacio"></span>
-								Comecei no final de 2019, com o incentivo do meu amigo que mostrou uma oportunidade para alcançar meu sonhos através da programação
+								Comecei em fevereiro de 2020 com o incentivo do meu amigo que mostrou uma oportunidade para alcançar meu sonhos através da programação, tive muita dificuldade na inicio para entra no ritmo com os meus estudos, mas consegui, com muita disciplina e foco.
+								<strong>Cursando - Previsão de termino julho de 2023.</strong>
 							</p>
 
 							<p id="2" class="desativo">
 								<span class="image red"></span>
-								trabalhei 2 anos em uma gráfica.
+								Desde crianças eu gostava de desenha, vi no Designer Gráfico uma chance de evoluir o que na época eu via como um hobby.
+								aprendi Adobe Photoshop, Adobe After e Blender.
+								Trabalhei 1 ano e 8 meses em uma gráfica na criação das artes para banner, cartãs, folhetos e etc.
+								<strong>Abril de 2012 a Dezembro de 2014.</strong>
 							</p>
 
 							<p id="3" class="desativo">
-								Em casa mesmo eu comecei a conserta microcomputadores.
+								<span class="image Microlins" ></span>
+								Inicio da minha caminhada aprendi o básico da informática.
+								<strong>Abril de 2011 a Setembro de 2011.</strong>
 							</p>
+
 						</section>
 				</section>
 
@@ -130,13 +131,13 @@
 					<div class="mySlides fade">
 						<div class="numbertext">1 / 2</div>
 						<a href="https://jonas-paiva.github.io/Trybewars/" target="_blank"><img src="./assets/projeto1.png" style="width: 100%"/></a>
-						<div class="text">Trybewarts</div>
+						<div class="text">Trybewarts - Aprendendo a fazer formulário.</div>
 					</div>
 
 					<div class="mySlides fade">
 						<div class="numbertext">2 / 2</div>
 						<img src="./assets/projeto2.png" style="width: 100%" />
-						<div class="text">Caption Two</div>
+						<div class="text">Meu Primeiro Site</div>
 					</div>
 
 					<!-- Next and previous buttons -->
@@ -158,40 +159,66 @@
 			<article id="contatos">
 				<h1>Entre em Contato</h1>
 				<section id="icons">
+
 					<span id="github">
-						<a target="_blank" href="https://github.com/Jonas-Paiva"><img src="./assets/github.png" alt=""/></a>				
+						<a class="links" target="_blank" href="https://github.com/Jonas-Paiva"><img src="./assets/github.png" alt=""/></a>				
 						<h2>GitHub</h2>
 					</span>
+
 					<span id="E-mail">
-						<img src="./assets/email.png" alt="" />
-						<h2>E-mail</h2>
+						<button class="links" onclick="showQrcode('email','flex')">
+							<img src="./assets/email.png" alt="" />
+							<h2>E-mail</h2>
+						</button>
 					</span>
+
 					<span id="instagram">
-						<a target="_blank" href="https://www.instagram.com/jonaspaiva_sg/"><img src="./assets/instagram.png" alt="" /></a>
+						<a class="links" target="_blank" href="https://www.instagram.com/jonaspaiva_sg/"><img src="./assets/instagram.png"/>
+						</a>
 						<h2>Instagram</h2>
 					</span>
+
 					<span id="linkdin">
-						<a target="_blank" href="https://www.linkedin.com/in/jonas-paiva-6537861a3/"><img src="./assets/linkedin.png" alt="" /></a>	
+						<a class="links"target="_blank" href="https://www.linkedin.com/in/jonas-paiva-6537861a3/"><img src="./assets/linkedin.png"/>
+						</a>	
 						<h2>Linkdin</h2>
 					</span>
+
 					<span id="whatsapp">
-						<button onclick="zap('flex')"><img src="./assets/whatsapp.png" alt="" />
-							<h2>WhatsApp</h2></button>
+						<button class="links" onclick="showQrcode('zap','flex')"><img src="./assets/whatsapp.png"/>
+							<h2>WhatsApp</h2>
+						</button>
 					</span>
+					
 				</section>
 			</article>
 
 		</main>
 		<!--rodapé-->
 		<footer id="rodape">
-			<p>©2022 | Projetado e codificado por Jonas Paiva.</p>
+			<p>
+				©2022 | Projetado e codificado por Jonas Paiva.
+			</p>
 		</footer>
 
-		<div onclick="zap('none')" id="qrcode" class="">
-			<img src="/assets/QRCode.svg" alt="">
+		<div onclick="showQrcode('zap','none')" id="zap" class="qrcode">
+			<span class="boxQrcode">
+				<img src="/assets/QRCode.svg">
+				<p>
+					Utilize a camera do seu celular para escanear o QRcode
+				</p>
+			</span>
 		</div>
-		<script src="/script/zap.js"></script>
-		<script src="/script/slide.js"></script>
-		<script src="./script/sobre.js"></script>
+
+		<div onclick="showQrcode('email','none')" id="email" class="qrcode">
+			<span class="boxQrcode">
+				<img src="/assets/QRCode_Email.svg">
+				<p>
+					Utilize a camera do seu celular para escanear o QRcode
+				</p>
+			</span>
+		</div>
+
+		<script src="/script/script.js"></script>
 	</body>
 </html>
